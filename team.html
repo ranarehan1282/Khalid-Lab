@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Team | Khalid Lab · QAU Islamabad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/khalid.css" />
+    <style>
+        /* PI card – larger and highlighted */
+        .pi-card {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            background: #fff;
+            border: 1px solid var(--kl-border);
+            border-top: 5px solid var(--kl-blue);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        .pi-card .avatar-lg {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: var(--kl-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--kl-blue);
+            flex-shrink: 0;
+            letter-spacing: 0.04em;
+        }
+        .pi-card .pi-info h3 { color: var(--kl-navy); margin: 0 0 0.2rem; }
+        .pi-card .pi-info .role { font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--kl-blue); margin-bottom: 0.8rem; }
+        .pi-card .pi-info p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 0.6rem; color: #444; }
+        .pi-card .pi-info .links a { font-size: 0.82rem; margin-right: 0.8rem; color: var(--kl-blue); }
+
+        /* Alumni table */
+        .alumni-entry { display: flex; gap: 1.2rem; align-items: center; padding: 0.8rem 0; border-bottom: 1px solid var(--kl-border); }
+        .alumni-entry .av-sm { width: 40px; height: 40px; border-radius: 50%; background: var(--kl-light); display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; color: var(--kl-blue); flex-shrink: 0; }
+        .alumni-entry .ae-body { font-size: 0.88rem; }
+        .alumni-entry .ae-body strong { display: block; color: var(--kl-navy); }
+        .alumni-entry .ae-body span { color: var(--kl-muted); }
+
+        @media (max-width: 640px) {
+            .pi-card { flex-direction: column; }
+        }
+    </style>
+</head>
+<body class="is-preload">
+<div id="wrapper">
+
+    <div id="main">
+        <div class="inner">
+
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Khalid Lab</strong> &nbsp;·&nbsp; Computational Structural Biology</a>
+                <ul class="icons">
+                    <li><a href="https://scholar.google.com/citations?user=dBR0f9wAAAAJ&hl=en" target="_blank" class="icon brands fa-google"><span class="label">Scholar</span></a></li>
+                    <li><a href="https://github.com/khalidlab-qau" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://linkedin.com/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://twitter.com/" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                </ul>
+            </header>
+
+            <!-- Page hero -->
+            <div class="page-hero">
+                <h1>Our Team</h1>
+                <p>A multidisciplinary group of researchers passionate about computational biology, protein structure, and drug discovery.</p>
+            </div>
+
+            <!-- ── PRINCIPAL INVESTIGATOR ── -->
+            <section>
+                <header class="major"><h2>Principal Investigator</h2></header>
+
+                <div class="pi-card">
+                    <div class="avatar-lg">RRK</div>
+                    <div class="pi-info">
+                        <h3>Dr. Rana Rehan Khalid</h3>
+                        <div class="role">Principal Investigator &nbsp;·&nbsp; Assistant Professor</div>
+                        <p>
+                            Dr. Rana Rehan Khalid is an Assistant Professor in the Department of Biosciences at Quaid-i-Azam University, Islamabad. He received his PhD in computational structural biology and completed postdoctoral training focused on protein dynamics and NMR-guided modelling.
+                        </p>
+                        <p>
+                            His research group investigates the structural and dynamic basis of signalling protein function — with a particular emphasis on nitric oxide signalling (hsGC, HNOX domains), mutation effects in disease-linked proteins (PDE6, PKG-Iα), and the application of AI and bioinformatics to drug discovery and proteomics. He has published over 20 peer-reviewed articles (h-index 11, 416 citations).
+                        </p>
+                        <div class="links">
+                            <a href="https://scholar.google.com/citations?user=dBR0f9wAAAAJ&hl=en" target="_blank">🎓 Google Scholar</a>
+                            <a href="mailto:r.khalid@qau.edu.pk">✉ r.khalid@qau.edu.pk</a>
+                            <a href="https://qau.edu.pk" target="_blank">🌐 QAU Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── POSTDOCTORAL RESEARCHERS ── -->
+            <section>
+                <header class="major"><h2>Postdoctoral Researchers</h2></header>
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <div class="avatar">SM</div>
+                        <h4>Dr. Sara Mahmood</h4>
+                        <div class="role">Postdoctoral Researcher</div>
+                        <div class="degree">PhD, NUST Islamabad (2022)</div>
+                        <p class="interests">Allosteric drug discovery; MD free energy calculations; HNOX domain pharmacology</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">IA</div>
+                        <h4>Dr. Imran Ayub</h4>
+                        <div class="role">Postdoctoral Researcher</div>
+                        <div class="degree">PhD, University of Karachi (2021)</div>
+                        <p class="interests">Protein–ligand binding kinetics; PARP inhibitors; Cancer target modelling</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── PhD STUDENTS ── -->
+            <section>
+                <header class="major"><h2>PhD Students</h2></header>
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <div class="avatar">FN</div>
+                        <h4>Fatima Naz</h4>
+                        <div class="role">PhD Candidate (Year 3)</div>
+                        <div class="degree">MS, QAU Islamabad</div>
+                        <p class="interests">PDE6 mutation landscape; Retinitis pigmentosa; Normal mode analysis</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">UB</div>
+                        <h4>Usman Baig</h4>
+                        <div class="role">PhD Candidate (Year 2)</div>
+                        <div class="degree">MS, COMSATS Islamabad</div>
+                        <p class="interests">AI-driven chemical shift prediction; NMR structure validation pipelines</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">AQ</div>
+                        <h4>Amna Qadir</h4>
+                        <div class="role">PhD Candidate (Year 2)</div>
+                        <div class="degree">MS, University of Punjab</div>
+                        <p class="interests">CSF proteomics biomarkers; Alzheimer's disease; Machine learning pipelines</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">ZH</div>
+                        <h4>Zubair Hussain</h4>
+                        <div class="role">PhD Student (Year 1)</div>
+                        <div class="degree">MS, GCU Faisalabad</div>
+                        <p class="interests">Antiviral drug discovery; Dengue virus protease; Virtual screening</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">NI</div>
+                        <h4>Nadia Iqbal</h4>
+                        <div class="role">PhD Student (Year 1)</div>
+                        <div class="degree">MS, Quaid-i-Azam University</div>
+                        <p class="interests">Cardiovascular signalling; PDE5A/PDE3A dual inhibitors; E-pharmacophore</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── MSc STUDENTS ── -->
+            <section>
+                <header class="major"><h2>MSc &amp; MPhil Students</h2></header>
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <div class="avatar">HR</div>
+                        <h4>Hira Rauf</h4>
+                        <div class="role">MPhil Student</div>
+                        <div class="degree">BS Biology, QAU</div>
+                        <p class="interests">Functional annotation; Hypothetical protein analysis; Bacterial genomes</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">KM</div>
+                        <h4>Kamran Mehmood</h4>
+                        <div class="role">MPhil Student</div>
+                        <div class="degree">BS Bioinformatics, UBIT Karachi</div>
+                        <p class="interests">Protein structure prediction; AlphaFold2 refinement; MD validation</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">RB</div>
+                        <h4>Rabia Bano</h4>
+                        <div class="role">MSc Student</div>
+                        <div class="degree">BS Biochemistry, Islamia University</div>
+                        <p class="interests">Natural product screening; Parasitic disease targets</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">SJ</div>
+                        <h4>Salman Javed</h4>
+                        <div class="role">MSc Student</div>
+                        <div class="degree">BS Bioinformatics, QAU</div>
+                        <p class="interests">GROMACS automation; Coarse-grained simulations; Workflow development</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── COLLABORATORS ── -->
+            <section>
+                <header class="major"><h2>Key Collaborators</h2></header>
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <div class="avatar">AM</div>
+                        <h4>Dr. Anam Maryam</h4>
+                        <div class="role">Collaborating Researcher</div>
+                        <div class="affil">Structural biology &amp; drug discovery</div>
+                        <p class="interests">Long-standing collaborator on PDE6, PKG-Iα, and cardiovascular drug discovery projects</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">OUS</div>
+                        <h4>Prof. Osman U. Sezerman</h4>
+                        <div class="role">Collaborator</div>
+                        <div class="affil">Bilkent University, Turkey</div>
+                        <p class="interests">Bioinformatics; hsGC allosteric modelling; Computational drug design</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">SCV</div>
+                        <h4>Dr. S. Chaitanya Vedithi</h4>
+                        <div class="role">Collaborator</div>
+                        <div class="affil">University of Cambridge, UK</div>
+                        <p class="interests">Structural biology of disease; PDE6; Mycobacterium tuberculosis</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="avatar">CC</div>
+                        <h4>Prof. Carlos Cruchaga</h4>
+                        <div class="role">Collaborator</div>
+                        <div class="affil">Washington University, St. Louis</div>
+                        <p class="interests">Multi-omics; Alzheimer's disease genetics; CSF biomarkers</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ── ALUMNI ── -->
+            <section>
+                <header class="major"><h2>Alumni</h2></header>
+
+                <div class="alumni-entry">
+                    <div class="av-sm">HA</div>
+                    <div class="ae-body">
+                        <strong>Dr. Hafiza Arooj</strong>
+                        <span>PhD 2023 · Now: Postdoctoral Fellow, NUST Islamabad</span>
+                    </div>
+                </div>
+
+                <div class="alumni-entry">
+                    <div class="av-sm">TK</div>
+                    <div class="ae-body">
+                        <strong>Tariq Kamran</strong>
+                        <span>MPhil 2022 · Now: PhD Student, University of Lahore</span>
+                    </div>
+                </div>
+
+                <div class="alumni-entry">
+                    <div class="av-sm">MB</div>
+                    <div class="ae-body">
+                        <strong>Misbah Bibi</strong>
+                        <span>MSc 2022 · Now: Research Associate, HEJ Research Institute, Karachi</span>
+                    </div>
+                </div>
+
+                <div class="alumni-entry">
+                    <div class="av-sm">AK</div>
+                    <div class="ae-body">
+                        <strong>Asad Khan</strong>
+                        <span>MSc 2021 · Now: Bioinformatics Analyst, BioSynth Ltd. Islamabad</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ── JOIN US ── -->
+            <section>
+                <header class="major"><h2>Join Our Team</h2></header>
+                <p>
+                    Khalid Lab welcomes motivated students and researchers at all career stages. We have a collaborative, supportive culture and offer training in modern computational structural biology tools and methods.
+                </p>
+                <ul>
+                    <li><strong>PhD positions:</strong> Open positions for HEC-funded PhD students (Pakistani nationals). Background in bioinformatics, biochemistry, molecular biology, or computational chemistry preferred.</li>
+                    <li><strong>Postdoctoral fellows:</strong> Candidates with a strong publication record in structural biology, MD simulations, or drug discovery are encouraged to apply with a CV and research statement.</li>
+                    <li><strong>MSc/MPhil rotations:</strong> QAU students interested in a research rotation should contact us directly.</li>
+                    <li><strong>Visiting researchers:</strong> International collaborators and visiting scientists are welcome for short stays.</li>
+                </ul>
+                <ul class="actions">
+                    <li><a href="contact.html" class="button primary">Contact Us to Apply</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+        <div class="inner">
+
+            <nav id="menu">
+                <header class="major"><h2>Navigation</h2></header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html" class="active">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=dBR0f9wAAAAJ&hl=en" target="_blank">Google Scholar ↗</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <header class="major"><h2>Team at a Glance</h2></header>
+                <ul class="alt">
+                    <li>1 Principal Investigator</li>
+                    <li>2 Postdoctoral Researchers</li>
+                    <li>5 PhD Students</li>
+                    <li>4 MSc / MPhil Students</li>
+                    <li>4+ Key Collaborators</li>
+                </ul>
+            </section>
+
+            <section>
+                <header class="major"><h2>Open Positions</h2></header>
+                <p style="font-size:0.88rem;line-height:1.7;">
+                    <strong style="color:var(--kl-blue);">2 PhD positions open</strong> for 2025 intake under HEC Indigenous Fellowship. Deadline: September 2025.
+                </p>
+                <ul class="actions">
+                    <li><a href="contact.html" class="button fit small">Apply →</a></li>
+                </ul>
+            </section>
+
+            <footer id="footer">
+                <p class="copyright">
+                    &copy; 2025 Khalid Lab &nbsp;·&nbsp; Quaid-i-Azam University.<br/>
+                    Design: <a href="https://html5up.net">HTML5 UP</a>.
+                </p>
+            </footer>
+
+        </div>
+    </div>
+
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

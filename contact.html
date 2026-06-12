@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Contact | Khalid Lab · QAU Islamabad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/khalid.css" />
+    <style>
+        /* Contact page specific */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        @media (max-width: 780px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+
+        .contact-block {
+            background: #fff;
+            border: 1px solid var(--kl-border);
+            border-radius: 8px;
+            padding: 1.6rem;
+        }
+        .contact-block h3 {
+            color: var(--kl-navy);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border-bottom: 2px solid var(--kl-light);
+            padding-bottom: 0.5rem;
+        }
+
+        .map-placeholder {
+            background: var(--kl-light);
+            border: 1px solid var(--kl-border);
+            border-radius: 8px;
+            height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            flex-direction: column;
+            gap: 0.5rem;
+            color: var(--kl-muted);
+        }
+        .map-placeholder .icon { font-size: 2rem; color: var(--kl-blue); }
+        .map-placeholder p { font-size: 0.85rem; margin: 0; }
+
+        /* Application form section */
+        .form-section {
+            background: #fafcfe;
+            border: 1px solid var(--kl-border);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .form-section h3 { color: var(--kl-navy); margin-bottom: 0.4rem; }
+        .form-section .subtitle { color: var(--kl-muted); font-size: 0.9rem; margin-bottom: 1.4rem; }
+    </style>
+</head>
+<body class="is-preload">
+<div id="wrapper">
+
+    <div id="main">
+        <div class="inner">
+
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Khalid Lab</strong> &nbsp;·&nbsp; Computational Structural Biology</a>
+                <ul class="icons">
+                    <li><a href="https://scholar.google.com/citations?user=dBR0f9wAAAAJ&hl=en" target="_blank" class="icon brands fa-google"><span class="label">Scholar</span></a></li>
+                    <li><a href="https://github.com/khalidlab-qau" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://linkedin.com/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://twitter.com/" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                </ul>
+            </header>
+
+            <!-- Page hero -->
+            <div class="page-hero">
+                <h1>Contact Us</h1>
+                <p>Reach out for research enquiries, collaboration proposals, or applications to join the lab.</p>
+            </div>
+
+            <!-- Contact blocks -->
+            <div class="contact-grid">
+
+                <div class="contact-block">
+                    <h3><span class="icon solid fa-map-marker-alt" style="margin-right:0.4rem;color:var(--kl-blue);"></span>Location</h3>
+                    <div class="contact-item">
+                        <div class="ci-icon"><span class="icon solid fa-building"></span></div>
+                        <div class="ci-body">
+                            <strong>Department</strong>
+                            Department of Biosciences<br/>
+                            Faculty of Biological Sciences
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon"><span class="icon solid fa-university"></span></div>
+                        <div class="ci-body">
+                            <strong>Institution</strong>
+                            Quaid-i-Azam University<br/>
+                            Islamabad 45320, Pakistan
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon"><span class="icon solid fa-door-open"></span></div>
+                        <div class="ci-body">
+                            <strong>Lab Room</strong>
+                            Room B-207, Biosciences Building<br/>
+                            QAU Main Campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <h3><span class="icon solid fa-envelope" style="margin-right:0.4rem;color:var(--kl-blue);"></span>Get in Touch</h3>
+                    <div class="contact-item">
+                        <div class="ci-icon"><span class="icon solid fa-envelope"></span></div>
+                        <div class="ci-body">
+                            <strong>Email (PI)</strong>
+                            <a href="mailto:r.khalid@qau.edu.pk">r.khalid@qau.edu.pk</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon"><span class="icon solid fa-envelope"></span></div>
+                        <div class="ci-body">
+                            <strong>Lab Email</strong>
+                            <a href="mailto:info@khalidlab.com">info@khalidlab.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon"><span class="icon solid fa-phone"></span></div>
+                        <div class="ci-body">
+                            <strong>Phone</strong>
+                            +92-51-9064-XXXX (Dept. Office)
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="ci-icon"><span class="icon solid fa-clock"></span></div>
+                        <div class="ci-body">
+                            <strong>Office Hours</strong>
+                            Mon–Thu: 10:00–13:00 PKT<br/>
+                            Or by appointment
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Map placeholder -->
+            <div class="map-placeholder">
+                <span class="icon solid fa-map-marker-alt" style="font-size:2rem;color:var(--kl-blue);"></span>
+                <p><strong>Quaid-i-Azam University</strong> · Islamabad, Pakistan</p>
+                <p style="font-size:0.8rem;">33.7480° N, 73.1549° E</p>
+                <a href="https://maps.google.com/?q=Quaid-i-Azam+University+Islamabad" target="_blank" class="button small" style="margin-top:0.4rem;">Open in Google Maps ↗</a>
+            </div>
+
+            <!-- General enquiry form -->
+            <section>
+                <div class="form-section">
+                    <h3>General Enquiry</h3>
+                    <p class="subtitle">For collaboration proposals, media enquiries, or general questions about our research.</p>
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="name" placeholder="Your Name" required />
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <input type="email" name="email" placeholder="Email Address" required />
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="affiliation" placeholder="Institution / Affiliation" />
+                            </div>
+                            <div class="col-12">
+                                <select name="enquiry-type">
+                                    <option value="">— Enquiry Type —</option>
+                                    <option value="collab">Collaboration Proposal</option>
+                                    <option value="research">Research Question</option>
+                                    <option value="media">Media / Press</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" rows="5" placeholder="Your message…" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" class="primary" /></li>
+                                    <li><input type="reset" value="Clear" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Application form -->
+            <section>
+                <header class="major"><h2>Apply to Join the Lab</h2></header>
+                <p>
+                    We welcome applications from motivated researchers. Please read the
+                    <a href="team.html">Team page</a> for current openings before applying.
+                    Include all requested information — incomplete applications cannot be considered.
+                </p>
+
+                <div class="form-section">
+                    <h3>Application Form</h3>
+                    <p class="subtitle">For PhD, MPhil, MSc, postdoctoral, and visiting researcher positions.</p>
+                    <form method="post" action="#">
+                        <div class="row gtr-uniform">
+                            <div class="col-6 col-12-xsmall">
+                                <input type="text" name="app-name" placeholder="Full Name" required />
+                            </div>
+                            <div class="col-6 col-12-xsmall">
+                                <input type="email" name="app-email" placeholder="Email Address" required />
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="app-degree" placeholder="Highest Degree (e.g. MS in Bioinformatics, NUST, 2023)" required />
+                            </div>
+                            <div class="col-12">
+                                <select name="app-position" required>
+                                    <option value="">— Position Applied For —</option>
+                                    <option value="phd">PhD (HEC Indigenous Fellowship)</option>
+                                    <option value="mphil">MPhil</option>
+                                    <option value="msc">MSc Rotation</option>
+                                    <option value="postdoc">Postdoctoral Fellow</option>
+                                    <option value="visiting">Visiting Researcher</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="app-area" placeholder="Research area of interest (e.g. Protein dynamics, Drug discovery)" required />
+                            </div>
+                            <div class="col-12">
+                                <textarea name="app-statement" rows="6" placeholder="Brief research statement: background, why you are interested in Khalid Lab, and what you hope to work on (250–400 words)." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <input type="url" name="app-scholar" placeholder="Google Scholar / ORCID URL (if available)" />
+                            </div>
+                            <div class="col-12">
+                                <p style="font-size:0.84rem;color:#666;margin-bottom:0.6rem;">
+                                    Please also email your CV and two reference contacts to
+                                    <a href="mailto:r.khalid@qau.edu.pk">r.khalid@qau.edu.pk</a>
+                                    with subject line <strong>[Application] – Your Name – Position</strong>.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" value="Submit Application" class="primary" /></li>
+                                    <li><input type="reset" value="Clear" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Social / external links -->
+            <section>
+                <header class="major"><h2>Find Us Online</h2></header>
+                <ul class="contact">
+                    <li class="icon brands fa-google"><a href="https://scholar.google.com/citations?user=dBR0f9wAAAAJ&hl=en" target="_blank">Google Scholar Profile</a></li>
+                    <li class="icon brands fa-github"><a href="https://github.com/khalidlab-qau" target="_blank">GitHub · khalidlab-qau</a></li>
+                    <li class="icon brands fa-linkedin-in"><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                    <li class="icon brands fa-twitter"><a href="https://twitter.com/" target="_blank">Twitter / X</a></li>
+                    <li class="icon solid fa-globe"><a href="https://qau.edu.pk" target="_blank">Quaid-i-Azam University</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+        <div class="inner">
+
+            <nav id="menu">
+                <header class="major"><h2>Navigation</h2></header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=dBR0f9wAAAAJ&hl=en" target="_blank">Google Scholar ↗</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <header class="major"><h2>Quick Contact</h2></header>
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="mailto:r.khalid@qau.edu.pk">r.khalid@qau.edu.pk</a></li>
+                    <li class="icon solid fa-map-marker-alt">Dept. of Biosciences<br/>Quaid-i-Azam University<br/>Islamabad 45320, Pakistan</li>
+                </ul>
+            </section>
+
+            <section>
+                <header class="major"><h2>Open Positions</h2></header>
+                <p style="font-size:0.88rem;line-height:1.7;">
+                    <strong style="color:var(--kl-blue);">2 PhD positions</strong> open for 2025 intake.<br/>
+                    Deadline: <strong>30 September 2025</strong>
+                </p>
+                <ul class="actions">
+                    <li><a href="#" class="button fit small">Apply Below →</a></li>
+                </ul>
+            </section>
+
+            <footer id="footer">
+                <p class="copyright">
+                    &copy; 2025 Khalid Lab &nbsp;·&nbsp; Quaid-i-Azam University.<br/>
+                    Design: <a href="https://html5up.net">HTML5 UP</a>.
+                </p>
+            </footer>
+
+        </div>
+    </div>
+
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

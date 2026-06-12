@@ -1,0 +1,274 @@
+/* ============================================================
+   Khalid Lab – site-wide style overrides
+   Applied on top of the Editorial (HTML5 UP) base stylesheet
+   ============================================================ */
+
+/* ── Brand tokens ──────────────────────────────────────────── */
+:root {
+    --kl-navy:   #1a3a52;
+    --kl-blue:   #2c5f8a;
+    --kl-sky:    #4a8db5;
+    --kl-light:  #e8f2f9;
+    --kl-border: #d0e3ef;
+    --kl-text:   #333740;
+    --kl-muted:  #6a7580;
+}
+
+/* ── Logo & header ─────────────────────────────────────────── */
+#header .logo strong          { color: var(--kl-blue); }
+#header .logo                 { font-weight: 600; }
+#header                       { border-bottom: 2px solid var(--kl-border); }
+
+/* ── Active nav link ───────────────────────────────────────── */
+#menu ul li a.active          { color: var(--kl-blue) !important;
+                                 font-weight: 600;
+                                 border-left: 3px solid var(--kl-blue);
+                                 padding-left: 0.75rem; }
+
+/* ── Section major header underline ───────────────────────── */
+.major h2 { position: relative; padding-bottom: 0.55rem; }
+.major h2::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--kl-blue);
+    margin-top: 0.45rem;
+    border-radius: 2px;
+}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.button.primary,
+ul.actions li a.button.primary {
+    background-color: var(--kl-blue) !important;
+    border-color:     var(--kl-blue) !important;
+    color: #fff !important;
+}
+.button.primary:hover { background-color: var(--kl-navy) !important;
+                         border-color:     var(--kl-navy) !important; }
+.button:hover          { border-color: var(--kl-blue) !important;
+                         color: var(--kl-blue) !important; }
+
+/* ── Feature icons ─────────────────────────────────────────── */
+.features article .icon::before { color: var(--kl-blue); }
+
+/* ── Stat strip (home banner) ──────────────────────────────── */
+.lab-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin: 1.6rem 0 2rem;
+    flex-wrap: wrap;
+}
+.lab-stats .stat .num {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--kl-blue);
+    line-height: 1;
+    display: block;
+}
+.lab-stats .stat .lbl {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--kl-muted);
+    display: block;
+    margin-top: 0.2rem;
+}
+
+/* ── Publication cards ─────────────────────────────────────── */
+.pub-card {
+    border-left: 3px solid var(--kl-blue);
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.4rem;
+    background: #fafcfe;
+    border-radius: 0 6px 6px 0;
+}
+.pub-card h3 {
+    font-size: 1rem;
+    color: var(--kl-navy);
+    margin: 0 0 0.3rem;
+    line-height: 1.4;
+}
+.pub-card .pub-journal {
+    font-size: 0.82rem;
+    color: var(--kl-muted);
+    margin-bottom: 0.3rem;
+}
+.pub-card .pub-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.pub-card .pub-cite {
+    font-size: 0.78rem;
+    background: var(--kl-light);
+    color: var(--kl-blue);
+    font-weight: 600;
+    padding: 0.18rem 0.6rem;
+    border-radius: 20px;
+}
+.pub-card .pub-link {
+    font-size: 0.78rem;
+    color: var(--kl-blue);
+    border: 1px solid var(--kl-border);
+    padding: 0.18rem 0.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.pub-card .pub-link:hover { background: var(--kl-light); }
+
+/* ── Team grid ─────────────────────────────────────────────── */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.4rem;
+    margin-top: 1rem;
+}
+.team-card {
+    background: #fff;
+    border: 1px solid var(--kl-border);
+    border-top: 4px solid var(--kl-blue);
+    border-radius: 6px;
+    padding: 1.3rem 1.1rem 1.1rem;
+    text-align: center;
+}
+.team-card .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 0 auto 0.8rem;
+    background: var(--kl-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--kl-blue);
+    letter-spacing: 0.04em;
+}
+.team-card h4 {
+    font-size: 0.95rem;
+    color: var(--kl-navy);
+    margin: 0 0 0.15rem;
+    font-weight: 600;
+}
+.team-card .role {
+    font-size: 0.74rem;
+    color: var(--kl-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.team-card .affil, .team-card .degree {
+    font-size: 0.78rem;
+    color: var(--kl-muted);
+    margin-top: 0.2rem;
+}
+.team-card .interests {
+    font-size: 0.78rem;
+    color: #444;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+/* ── Research area cards ────────────────────────────────────── */
+.research-card {
+    background: #fff;
+    border: 1px solid var(--kl-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.research-card h3 {
+    color: var(--kl-navy);
+    border-left: 4px solid var(--kl-blue);
+    padding-left: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+.research-card .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    background: var(--kl-light);
+    color: var(--kl-blue);
+    border-radius: 12px;
+    padding: 0.15rem 0.55rem;
+    margin: 0.15rem 0.1rem;
+}
+
+/* ── Contact details ───────────────────────────────────────── */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+.contact-item .ci-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--kl-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--kl-blue);
+    flex-shrink: 0;
+    font-size: 0.95rem;
+}
+.contact-item .ci-body { font-size: 0.9rem; color: var(--kl-text); }
+.contact-item .ci-body strong { display: block; font-size: 0.78rem; text-transform: uppercase;
+                                 letter-spacing: 0.07em; color: var(--kl-muted); margin-bottom: 0.1rem; }
+
+/* ── Page hero strips (non-home pages) ──────────────────────── */
+.page-hero {
+    background: linear-gradient(135deg, var(--kl-navy) 0%, var(--kl-blue) 100%);
+    color: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+}
+.page-hero h1 { color: #fff; margin: 0 0 0.4rem; }
+.page-hero p  { color: rgba(255,255,255,0.78); margin: 0; font-size: 1rem; }
+
+/* ── Filter pills ───────────────────────────────────────────── */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.filter-pill {
+    display: inline-block;
+    font-size: 0.78rem;
+    padding: 0.28rem 0.85rem;
+    border-radius: 20px;
+    border: 1px solid var(--kl-border);
+    cursor: pointer;
+    color: var(--kl-text);
+    background: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.filter-pill:hover,
+.filter-pill.active {
+    background: var(--kl-blue);
+    border-color: var(--kl-blue);
+    color: #fff;
+}
+
+/* ── Misc ───────────────────────────────────────────────────── */
+.section-divider { border: none; border-top: 1px solid var(--kl-border); margin: 2rem 0; }
+.label-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    background: var(--kl-light);
+    color: var(--kl-blue);
+    border-radius: 3px;
+    padding: 0.1rem 0.45rem;
+    vertical-align: middle;
+}
